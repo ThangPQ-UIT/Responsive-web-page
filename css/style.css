@@ -1,0 +1,492 @@
+/* -------------Header-------------- */
+.header {
+	width: 100%;
+}
+.header-top {
+	height: 36px;
+	width: 100%;
+	display: flex;
+	background-color: var(--color-background);
+}
+.header-top--right {
+	margin-left: 40px;
+	display: flex;
+	flex-direction: row-reverse;
+}
+.social-link__list {
+	padding: 0px;
+	display: flex;
+	margin: 0px;
+	line-height: 36px;
+}
+.social-link__list i {
+	line-height: 36px;
+}
+.social-link__item {
+	font-size: 1.5rem;
+	list-style: none;
+	margin: 0px;
+	margin-right: 22px;
+	color: var(--font-color);
+	font-family: 'Roboto', sans-serif;
+}
+
+/* ---------------header middle--------------- */
+.header-middle {
+	height: 80px;
+	display: flex;
+}
+.header-middle .row {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.nav-list {
+	list-style: none;
+	font-size: 1.5rem;
+	margin: 0px;
+}
+.header-middle--left .icon{
+	line-height: 80px;
+}
+.header-top--right {
+	height: 100%;
+}
+.header-middle--left {
+	margin: 0px;
+}
+.nav-list {
+	color: var(--font-color);
+	display: flex;
+	padding: 0px;
+	margin-left: 18px;
+}
+.nav-item {
+	margin-right: 44px;
+	line-height: 80px;
+}
+.nav-item:nth-child(1) {
+	margin-left: 59px;
+}
+.nav-item:nth-child(5) {
+	margin-right: 0px;
+}
+/* --------------Header bottom ---------------*/
+.header-bottom {
+	display: flex;
+	height: 90px;
+}
+.header-bottom .row {
+	position: relative;
+}
+.nav-bar-check {
+	position: absolute;
+	top: 105%;
+	left: 0px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 0px;
+	margin: 0px;
+	background-color: var(--primary-color);
+	display: none;
+	z-index: 2;
+}
+.nav-bar-list li {
+	font-size: 1.5rem;
+	margin-top: 20px;
+	list-style: none;
+}
+#nav-check {
+	display: none;
+}
+#nav-check:checked ~ .nav-bar-check {
+	display: block;
+}
+/* bar icon */
+.bar-icon {
+	outline: none;
+	position: absolute;
+	font-size: 1.9rem;;
+	right: 10px;
+	top: 0px;
+	padding: 6px;
+	background-color: var(--primary-color);
+	border: none;
+	border-radius: 5px;
+	/* display: none; */
+}
+.header-bottom--right {
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+.header-bottom--right .search {
+	display: flex;
+	align-items: center;
+	position: relative;
+	width: 90%;
+}
+.header-bottom--right .search-icon {
+	position: absolute;
+	right: 10%;
+	font-size: 1.4rem;
+	color: #BBBBBA;
+}
+.header-bottom--right .search input {
+	padding: 10px;
+	width: 100%;
+	border: none;
+	background-color: var(--color-background);
+}
+.header-bottom--right .search input:focus {
+	outline: none;
+}
+.infor-list {
+	display: flex;
+	margin: 0px;
+	padding: 0px;
+	line-height: 90px;
+}
+.infor-item {
+	list-style: none;
+	margin-right: 36px;
+}
+.infor-item a {
+	font-style: "Roboto", sans-serif;
+	text-decoration: none;
+	color: var(--font-color);
+	font-size: 1.7rem;
+	font-weight: 500;
+}
+.infor-item a:hover {
+	color: var(--primary-color);
+}
+/* ------------Main (Category & Brands)---------------- */
+.row-top-main,
+.row-bottom-main {
+	margin-bottom: 30px;
+}
+.category-name {
+	position: relative;
+	margin-bottom: 40px;;
+	display: flex;
+	justify-content: center;
+}
+.category-name::before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 30%;
+	border: 1px solid var(--border-color);
+}
+.category-name::after {
+	content: "";
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 30%;
+	border: 1px solid var(--border-color);
+}
+.category-name p {
+	position: absolute;
+	top: -9px;;
+	margin: 0px;
+	font-size: 1.8rem;
+	color: var(--primary-color);
+	font-weight: 900;
+}
+.category-list {
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid var(--border-color);
+}
+.category-item {
+	font-size: 1.5rem;
+	margin: 21px;
+	list-style: none;
+}
+.category-item a {
+	text-decoration: none;
+	color: var(--font-color);
+}
+.category__sportswear,
+.category__mens,
+.category__womens {
+	display: flex;
+}
+.category__sportswear a,
+.category__mens a,
+.category__womens a {
+	flex-grow:1;
+}
+/* -----------feature items------------- */
+.feature-item-name {
+	position: relative;
+	margin-bottom: 40px;;
+	display: flex;
+	justify-content: center;
+}
+.feature-item-name p {
+	position: absolute;
+	top: -9px;
+	margin: 0px;
+	font-size: 1.8rem;
+	color: var(--primary-color);
+	font-weight: 900;
+} 
+.feature-item-name::before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 40%;
+	border: 1px solid var(--border-color);
+}
+.feature-item-name::after {
+	content: "";
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 40%;
+	border: 1px solid var(--border-color);
+}
+
+.easy-polo {
+	position: relative;
+	height: 410px;
+	text-align: center;
+	font-size: 1.4rem;
+	border: 1px solid var(--border-color);
+	overflow: hidden;
+	margin-bottom: 21px;
+}
+.detailed-product {
+	height: 370px;
+}
+.jacket >.detailed-product .product-img,
+.tshirt-men >.detailed-product .product-img,
+.dress >.detailed-product .product-img,
+.skirt >.detailed-product .product-img,
+.sweater >.detailed-product .product-img,
+.tshirt-women >.detailed-product .product-img,
+.detailed-product>.overlay>.product-img
+ {
+	height: 240px;
+	margin-bottom: 18px;
+}
+.jacket >.detailed-product>.product-img {
+	background-image: url('../img/product1.jpg');
+}
+.tshirt-men >.detailed-product >.product-img {
+	background-image: url('../img/product2.jpg');
+}
+.dress >.detailed-product >.product-img {
+	background-image: url('../img/product3.jpg');
+}
+.skirt >.detailed-product >.product-img {
+	background-image: url('../img/product4.jpg');
+}
+.sweater >.detailed-product >.product-img {
+	background-image: url('../img/product5.jpg');
+}
+.tshirt-women >.detailed-product >.product-img {
+	background-image: url('../img/product6.jpg');
+}
+.product-price {
+	font-size: 1.8rem;
+	color: var(--primary-color);
+	font-weight: bolder;
+}
+.product-name {
+	margin-bottom: 15px;
+}
+.detailed-product>a {
+	margin-top: 19px;
+	color: var(--font-color);
+	padding: 8px;
+	background-color: var(--color-background);
+	text-decoration: none;
+}
+.add {
+	border-top: 1px solid var(--border-color);
+	display: flex;
+	align-items: center;
+	height: 40px;
+}
+.add-to-wishlist,
+.add-to-compare {
+	flex-grow: 1;
+}
+.add a {
+	text-decoration: none;
+	color: #B3AFA8;
+	margin: 0px;
+	font-size: 1.2rem;
+}
+.skirt .status,
+.sweater .status {
+	height: 70px;
+	width: 70px;
+	position: absolute;
+	top: -35px;
+	right: -35px;
+	color: #FFF;
+	transform: rotate(45deg);
+	display: flex;
+	flex-direction: column-reverse;
+	z-index: 2;
+}
+.skirt .status {
+	background-color: red;
+}
+.sweater .status {
+	background-color: #2ECC71;
+}
+.sweater .status p,
+.skirt .status p {
+	font-size: 1.2rem;
+	margin: 0px;
+}
+.detailed-product .overlay {
+	position: absolute;
+	top: -370px;
+	left: 0px;
+	height: 370px;
+	width: 100%;
+	background-color: rgba(254, 152, 15, .8);
+	z-index: 1;
+	transition: all .5s;
+}
+.detailed-product:hover .overlay {
+	transform: translateY(370px);
+}
+.detailed-product .overlay>.product-price,
+.detailed-product .overlay>.product-name {
+	color: #FFF;
+}
+.detailed-product .overlay>a {
+	text-decoration: none;
+	padding: 8px;
+	background-color: #FFF;
+}
+/* -------------Footer--------------- */
+.footer {
+	height: auto;
+	background-color: var(--color-background);
+}
+.footer-top {
+	height: 190px;
+	/* border: 1px solid orange; */
+	box-shadow: 0px 4px 2px -2px rgba(0, 0, 0, 0.1);
+	display: flex;
+	align-items: center;
+}
+.shop-name>p {
+	color: #B3B3AD;
+	font-size: 1.2rem;
+}
+.shop-name>h2 {
+	font-family: abel;
+	color: #B4B1AB;
+}
+.shop-name>h2::first-letter {
+	color: var(--primary-color);
+}
+.circle-of-hand {
+	text-align: center;
+	color: #666663;
+	font-size: 1.2rem;
+}
+.circle-of-hand .img-bg {
+	position: relative;
+}
+.img-bg .overlay {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	background-color: var(--primary-color);
+	transition: all 0.4s;
+	opacity: 0;
+}
+.img-bg:hover .overlay{
+	opacity: 1;
+}
+.img-bg .overlay i {
+	color: #FFF;
+}
+.circle-of-hand>.img-bg {
+	height: 60px;
+	width: 100%;
+	border: 2px solid #CCCCC6;
+}
+.child1 .img-bg {
+	background-image: url(../img/iframe1.png);
+}
+.child2 .img-bg {
+	background-image: url(../img/iframe2.png);
+}
+.child3 .img-bg {
+	background-image: url(../img/iframe3.png);
+}
+.child4 .img-bg {
+	background-image: url(../img/iframe4.png);
+}
+/* ------ */
+.map {
+	/* margin-left: 40px; */
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+.map .bg-map{
+	height: 100%;
+	width: 100%;
+	background-image: url(../img/map.png);
+	background-size: 100% 100%;
+}
+.map p {
+	position: absolute;
+	top: 0px;
+	line-height: 150px;
+	font-size: 1.3rem;
+	color: #666663;
+	margin-left: 30px;
+}
+/* ------------Footer bottom-------------- */
+.footer-bottom ul {
+	padding: 0px;
+}
+.footer-bottom li {
+	list-style: none;
+	margin: 0px;
+}
+.footer-bottom h2 {
+	margin-top: 30px;
+	color: #666663;
+}
+.footer-bottom a {
+	text-decoration: none;
+	display: block;
+	font-size: 1.4rem;
+	color: #8C8C88;
+	margin: 15px 0px;
+}
+.footer_email {
+	height: 30px;
+	display: flex;
+}
+.footer_email input {
+	width: 80%;
+	border: none;
+}
+.footer_email button {
+	background-color: var(--primary-color);
+	padding: 9px;
+	border: none;
+}
+.about-shopper:nth-child(1) {
+	font-size: 1.3rem;
+	color: #8C8C88;
+}

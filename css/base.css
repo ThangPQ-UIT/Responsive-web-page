@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    margin: 0px;
+}
+:root {
+    --font-color: #696763;
+    --primary-color: #fdb45e;
+    --color-background: #F0F0E9;
+    --border-color: #F7F7F0;
+}
