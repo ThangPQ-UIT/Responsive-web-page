@@ -112,7 +112,7 @@
 	background-color: var(--primary-color);
 	border: none;
 	border-radius: 5px;
-	/* display: none; */
+	display: none;
 }
 .header-bottom--right {
 	height: 100%;
